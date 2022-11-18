@@ -18,6 +18,10 @@
 *.so
 *.dylib
 *.dll
+!build/SDL2.dll
+!bin/SDL2.dll
+!deps/sdl2/lib/x86/SDL2.dll
+!deps/sdl2/lib/x64/SDL2.dll
 
 # Fortran module files
 *.mod
@@ -32,4 +36,4 @@
 *.out
 *.app
 
-.vscode/
+# .vscode/
