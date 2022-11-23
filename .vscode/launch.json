@@ -5,19 +5,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Compile with console",
+      "name": "Debug x64",
       "type": "cppvsdbg",
       "request": "launch",
-      "program": "${workspaceFolder}\\build\\${workspaceFolderBasename}.exe",
+      "program": "${workspaceFolder}\\build\\${workspaceFolderBasename}_d.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}\\build",
       "environment": [],
       "console": "integratedTerminal",
-      "preLaunchTask": "compile_cl.bat"
+      "preLaunchTask": "compile_cl_debug_x64.bat"
     },
     {
-      "name": "Compile without console",
+      "name": "Release x64",
       "type": "cppvsdbg",
       "request": "launch",
       "program": "${workspaceFolder}\\build\\${workspaceFolderBasename}.exe",
@@ -26,7 +26,7 @@
       "cwd": "${workspaceFolder}\\build",
       "environment": [],
       "console": "integratedTerminal",
-      "preLaunchTask": "compile_cl_noconsole.bat"
+      "preLaunchTask": "compile_cl_release_x64.bat"
     }
   ]
 }

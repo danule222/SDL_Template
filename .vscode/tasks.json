@@ -3,12 +3,12 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "compile_cl.bat",
+      "label": "compile_cl_debug_x64.bat",
       "command": "cmd",
       "args": [
         "/c",
-        "${workspaceFolder}\\build\\compile_cl.bat",
-        "${workspaceFolderBasename}"
+        "${workspaceFolder}\\build\\compile_cl_debug_x64.bat",
+        "${workspaceFolderBasename}_d"
       ],
       "options": {
         "cwd": "${workspaceFolder}\\build"
@@ -19,11 +19,11 @@
     },
     {
       "type": "cppbuild",
-      "label": "compile_cl_noconsole.bat",
+      "label": "compile_cl_release_x64.bat",
       "command": "cmd",
       "args": [
         "/c",
-        "${workspaceFolder}\\build\\compile_cl_noconsole.bat",
+        "${workspaceFolder}\\build\\compile_cl_release_x64.bat",
         "${workspaceFolderBasename}"
       ],
       "options": {
